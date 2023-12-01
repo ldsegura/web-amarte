@@ -1,0 +1,169 @@
+@import "./variable.scss";
+@import "../assets/fonts/GilroyFont/stylesheet.css";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: Gilroy, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  vertical-align: baseline;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.container-search {
+  section,
+  .section-content {
+    position: relative;
+    img {
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .container-search-body {
+      position: absolute;
+      top: 0;
+      margin: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      max-width: 1320px;
+
+      .search-body-box {
+        background-color: #ffffff78;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: $border-searchBox;
+      }
+    }
+  }
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.mouse-hover {
+  cursor: pointer;
+}
+#modal_gallery {
+  .modal-content {
+    background-color: transparent;
+    border: 0;
+    .modal-header {
+      border-bottom: transparent;
+    }
+  }
+}
+.btn.btn-outline-primary {
+  &:hover {
+    color: $primaryhover;
+  }
+}
+.btn.btn-primary {
+  color: $primaryhover;
+
+  &:hover {
+    color: $primaryhover;
+  }
+}
+//TODO components
+@import "./components/icons.scss";
+
+//TODO Last sections
+@import "./layout/footers.scss";
+@import "./layout/sections.scss";
+@import "./layout/gallery-container-list.scss";
+@import "./layout/page-sell.scss";
